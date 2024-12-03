@@ -21,6 +21,7 @@
       And Select gender
       And Select Date Of Birth
       And Select Subscription
+      And Select National Id
       And Click On Save button
       Then Verify From Response Status Code
       And Verify it redirected to another page to insert data

@@ -21,7 +21,11 @@ public class P02_BulkPendingAccound {
     public WebElement selectAddress(){return driver.findElement(By.id("select_address"));}
     //***************************submitForm*****************************************
     public WebElement submitForm(){return driver.findElement(By.id("submitForm"));}
+    public WebElement accountName(){return driver.findElement(By.xpath("//*[@id=\"data-table\"]/tbody/tr[1]/td[2]"));}
+    public WebElement mobileNum(){return driver.findElement(By.xpath("//*[@id=\"data-table\"]/tbody/tr[1]/td[4]"));}
+    public WebElement customerAlreadyFound(){return driver.findElement(By.xpath("//*[@id=\"medicinesfull\"]/tbody/tr[1]/td[2]"));}
     //******************************Expected Data***************************
     public String expectedUrlResult="https://admin.carelite.app/dashboard/customer_lists/import/getdata";
+    public String expectedCustomerAlreadyFound="* The phone number is already in use by customer abanoub nasser Ibrahim phone:01226364389";
     public int expectedStatusCode=200;
 }

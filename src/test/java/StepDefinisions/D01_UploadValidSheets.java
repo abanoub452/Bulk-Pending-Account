@@ -54,6 +54,11 @@ public class D01_UploadValidSheets {
        Select subscription = new Select(bulkImport.selectSubscription());
        subscription.selectByVisibleText("subscription");
    }
+  @And("Select National Id")
+    public void selectNationalId(){
+       Select nationalId = new Select(bulkImport.selectNationalId());
+       nationalId.selectByVisibleText("national_id");
+   }
    @And("Click On Save button")
     public void clickOnSaveBtn() throws InterruptedException {
        JavascriptExecutor js = (JavascriptExecutor) driver;
