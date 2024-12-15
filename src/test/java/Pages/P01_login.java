@@ -15,7 +15,7 @@ public class P01_login {
     WebElement enterPass = driver.findElement(pass);
     return enterPass;
   }
-  public WebElement loginBtn(){return driver.findElement(By.xpath("//button[contains(text(),'Login')]"));}
+  public WebElement loginBtn(){return driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));}
   //login Functions
   public void loginStep(String email , String password){
     email().sendKeys(email);

@@ -1,4 +1,5 @@
-Feature:
+@Smoke
+Feature: This is Smoking Test For verifying in data validation
   Scenario: Verify From Valid Data
     Given open bulk pending account page
     When click on AstraTech Package
