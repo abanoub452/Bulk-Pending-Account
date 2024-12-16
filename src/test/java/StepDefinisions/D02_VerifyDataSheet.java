@@ -26,8 +26,8 @@ public class D02_VerifyDataSheet {
     }
     @And("Verify From Names & Phones")
     public void verifyData(){
+        System.out.println("Invalid Data");
         for (int i = 1; i <= 4; i++) {
-            System.out.println("Invalid Data");
             WebElement inavalidData = driver.findElement(By.xpath("//*[@id='medicinesfull']/tbody/tr[" + i + "]"));
             System.out.println(inavalidData.getText());
         }
@@ -35,8 +35,8 @@ public class D02_VerifyDataSheet {
         Assert.assertEquals(bulkImport.customerAlreadyUsed,bulkImport.customerAlreadyUsed().getText());
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,1000)");
+        System.out.println("Insert New Data");
         for (int i = 1; i <= 4; i++) {
-            System.out.println("Insert New Data");
             WebElement validData = driver.findElement(By.xpath("//*[@id=\"data-table\"]/tbody/tr["+i+"]"));
             System.out.println(validData.getText());
         }
